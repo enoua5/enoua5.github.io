@@ -1,0 +1,49 @@
+/* Global settings*/
+:root
+{
+    /* Set Bootstrap variables here*/
+    --bs-primary: #a26;
+}
+
+body
+{
+    background-color: var(--bs-secondary-bg);
+}
+main
+{
+    background-color: var(--bs-body-bg);
+}
+nav
+{
+    background-color: var(--bs-primary);
+}
+h2
+{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+/* About Me */
+#about-me p
+{
+    text-align: justify;
+}
+
+/* Technologies */
+#tech-list-target h3
+{
+    font-size: 1em;
+}
+
+#tech-list-target a
+{
+    white-space: nowrap;
+    margin: 2em;
+}
+
+#tech-list-target img
+{
+    width: 2em;
+    height: 2em;
+    margin: 1em;
+}

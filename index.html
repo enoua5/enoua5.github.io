@@ -1,5 +1,169 @@
-<h1>Placeholder, sorry</h1>
-
-<p>I'll fill this out with links later, but I just don't want this page to be a 404</p>
-  
-  
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jacob Allen Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js/main.js"></script>
+    <script>
+      PAGE_ID = "main";
+    </script>
+    <script src="js/theme.js"></script>
+    <script src="js/data.js"></script>
+    <meta charset="utf8" />
+  </head>
+  <body onload="onload()">
+    <header class="sticky-top">
+      <nav class="container navbar navbar-expand-lg justify-content-end p-3">
+        <a class="navbar-brand" href="/">Home</a>
+        <div class="dropdown ml-auto">
+          <button
+            class="btn btn-secondary dropdown-toggle"
+            type="button"
+            id="themeDropdown"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Theme
+          </button>
+          <div class="dropdown-menu" aria-labelledby="themeDropdown">
+            <a class="dropdown-item" href="javascript:setTheme('dark')">
+              Dark
+            </a>
+            <a class="dropdown-item" href="javascript:setTheme('light')">
+              Light
+            </a>
+            <a class="dropdown-item" href="javascript:setTheme('auto')">
+              Auto
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="container p-5 text-center">
+      <h1 class="fw-semibold">Jacob Allen Portfolio</h1>
+      <div id="about-me" class="container clearfix">
+        <h2>About Me</h2>
+        <img
+          src="img/pfp.jpg"
+          class="float-start border border-1 rounded me-5"
+          style="width: 20%"
+        />
+        <p>
+          I have always been deeply interested in computer science and
+          mathematics, and am continually looking to learn new technologies and
+          skills. I started teaching myself to code in 2015, after feeling
+          unchallenged by high school's computing class, and have continued to
+          improve my skills as a developer considerably through a variety of
+          hobby projects. These projects range from games, to apps, to utility
+          programs, through which I like to challenge myself to not only improve
+          in my general abilities, but also to learn new technologies and
+          concepts.
+        </p>
+        <p>
+          I graduated Magna cum Laude with a Bachelor of Science in Computer
+          Science and Minor in Mathematics from Weber State University in 2023.
+        </p>
+      </div>
+      <div class="container">
+        <h2>Technologies</h2>
+        <div id="tech-list-target"></div>
+      </div>
+    </main>
+    <footer class="container p-5">
+      <details>
+        <summary>Legal</summary>
+        <ul>
+          <li>
+            Spring Boot logo created by Pivotal Software, Inc., released under
+            <a href="https://creativecommons.org/licenses/by-sa/2.0/deed.en"
+              >Creative Commons Attribution-Share Alike 2.0 Generic</a
+            >
+            license.
+          </li>
+          <li>
+            Angular logo created by AngularJS, released under
+            <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en">
+              Creative Commons Attribution-Share Alike 3.0 Unported</a
+            >
+            license. Changes were made to remove white background.
+          </li>
+          <li>
+            HTML5 and CSS3 logos created by W3C, released under
+            <a href="http://creativecommons.org/licenses/by/3.0/"
+              >Creative Commons Attribution 3.0 Unported</a
+            >
+            license.
+          </li>
+          <li>
+            The Java and the Java logo are registered trademarks of Oracle
+            Corporation. Their use here falls under fair use, only for
+            identification purposes.
+          </li>
+          <li>
+            Android Studio logo created by Google, released under
+            <a href="https://creativecommons.org/licenses/by/2.5/deed.en"
+              >Creative Commons Attribution 2.5 Generic</a
+            >
+            license.
+          </li>
+          <li>
+            <p>NASM logo Copyright © 2012 H. Peter Anvin</p>
+            <p>
+              Redistribution and use in source and binary forms, with or without
+              modification, are permitted provided that the following conditions
+              are met:
+            </p>
+            <ol>
+              <li>
+                Redistributions of source code must retain the above copyright
+                notice, this list of conditions and the following disclaimer.
+              </li>
+              <li>
+                Redistributions in binary form must reproduce the above
+                copyright notice, this list of conditions and the following
+                disclaimer in the documentation and/or other materials provided
+                with the distribution.
+              </li>
+            </ol>
+            <p>
+              THIS SOFTWARE IS PROVIDED BY H. PETER ANVIN "AS IS" AND ANY
+              EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+              IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+              PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL H. PETER ANVIN BE LIABLE
+              FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+              CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT
+              OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+              BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+              LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+              (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE
+              USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH
+              DAMAGE.
+            </p>
+          </li>
+        </ul>
+      </details>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
