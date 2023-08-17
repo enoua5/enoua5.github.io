@@ -237,6 +237,14 @@ const PORTFOLIO_DATA = {
             'https://github.com/enoua5/cs3620-reversi',
             'reversi.png'
         ),
+        new Project(
+            "Shuffle",
+            [PYTHON],
+            `This may be a bit of an esoteric pick for my portfolio, but this is an implementation of an esoteric programming language I created: Shuffle. This programming language (if you even think it's fair to call it that) encodes programs as two decks of cards being used in the card game War. All looping is done by forcing the decks to return to their initial setup after a certain number of moves. I managed to prove that it's Turning complete as long as you accept the 12,321 of Hearts as a 'real' playing card.`,
+            'https://esolangs.org/wiki/Shuffle',
+            'https://github.com/enoua5/shuffle2',
+            ''
+        ),
     ]
 }
 
