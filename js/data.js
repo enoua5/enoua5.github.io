@@ -165,7 +165,7 @@ const PORTFOLIO_DATA = {
         {
             header: new TechHeader("Application Programming"),
             skills: [
-                new TechSkill("C", C, "c.png"),
+                //new TechSkill("C", C, "c.png"),
                 new TechSkill("C++", CPP, "cpp.png"),
                 new TechSkill("Java", JAVA, "java.png"),
                 new TechSkill("Python", PYTHON, "python.png"),
@@ -236,6 +236,14 @@ const PORTFOLIO_DATA = {
             '',
             'https://github.com/enoua5/cs3620-reversi',
             'reversi.png'
+        ),
+        new Project(
+            "WebScholar",
+            [SPRING, JAVA, ANGULAR, TS, HTML, CSS, RESTAPI, SQL],
+            `Webscholar was my Capstone project for my Bachelor degree, and is a scholarship management service created using Spring Boot Java and Angular TypeScript. The class was given the partially finished project, and was put to organizing ourselves to continue its progress. I was part of the team working with the Angular pages interacting with the Account microservices. The project was completely inoperable when we inheritated it, so I focused a lot on testing and bug-fixing. I ended up helping the other teams a decent amount with the backend as well. I also lead efforts to implement much needed documentation, adding JavaDoc and JSDoc, bringing front-end to full documentation, and fixing/implementing front-end automated tests.`,
+            '',
+            'https://github.com/enoua5/webscholar-clone',
+            ''
         ),
         new Project(
             "Shuffle",
