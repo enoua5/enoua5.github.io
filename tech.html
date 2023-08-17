@@ -9,7 +9,11 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <script src="js/util.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      PAGE_ID = "tech";
+    </script>
     <script src="js/theme.js"></script>
     <script src="js/data.js"></script>
     <meta charset="utf8" />
@@ -44,8 +48,8 @@
       </nav>
     </header>
     <main class="container p-5 text-center">
-      <h1 class="fw-semibold">Technology Examples</h1>
-      <p>You caught an unfinished section! Come back later!</p>
+      <h1 id="header" class="fw-semibold">Technology Examples</h1>
+      <div id="example-box" class="container"></div>
     </main>
     <footer class="container p-5"></footer>
   </body>

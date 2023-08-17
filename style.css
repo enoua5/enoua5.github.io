@@ -47,3 +47,39 @@ h2
     height: 2em;
     margin: 1em;
 }
+
+.example img
+{
+    float: left;
+    width: 30%;
+    min-width: 20em;
+    margin-right: 5em;
+    
+}
+
+.example h2
+{
+    margin-bottom: 0.5em;
+}
+
+.example p
+{
+    text-align: justify;
+}
+
+.example .project-link, .code-link
+{
+    margin: 1em;
+}
+
+.example .tag
+{
+    margin-left: 1em;
+    margin-right: 1em;
+    font-weight: bold;
+}
+
+.example .tag-container
+{
+    margin-bottom: 1em;
+}
